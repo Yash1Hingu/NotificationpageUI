@@ -2,3 +2,18 @@
     font-family: 'Plus Jakarta Sans Semi Bold';
     src: url('assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: hsl(0, 0%, 100%);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
