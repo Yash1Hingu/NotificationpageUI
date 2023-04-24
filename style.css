@@ -123,16 +123,11 @@ a{
 }
 
 .messageImage{
-    height: 100%;
-    position: absolute;
-    right: 0;    
+    height: 50px
 }
 
 @media screen and (max-width:550px){
     .container{
         padding: 10px;
-    }
-    .messageImage{
-        display: none;
     }
 }
