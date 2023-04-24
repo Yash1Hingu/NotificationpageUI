@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Notifications page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <main>
-    <head>
-      <h2>Notifications</h2>
-      <span id="counter">3</span>
-      <h4>Mark all as read</h4>
-    </head>
-    <div id="notificationsBox">
-      <div class="notification">
-        <img src="" alt="" class="userImage">
-        <div >
-            <a href="#" class="userID">Mark Webber</a>
-            <span class="message">reacted to your recent post</span>
-            <a href="#" class="messagejoin">My first tournament today!</a>
-            <span class="status"></span>
-            <span class="time">1m ago</span>
-        </div>
+    <div class="container">
+      <div id="head">
+        <h2>Notifications</h2>
+        <span id="counter">3</span>
+        <a href="#" id="markRead">Mark all as read</a>
       </div>
-      <div class="notification">
-        <img src="" alt="" class="userImage">
-        <div >
+      <div id="notificationsBox">
+        <div class="notification active">
+          <img src="/assets/images/avatar-mark-webber.webp" alt="" class="userImage">
+          <div>
             <a href="#" class="userID">Mark Webber</a>
             <span class="message">reacted to your recent post</span>
             <a href="#" class="messagejoin">My first tournament today!</a>
             <span class="status"></span>
-            <span class="time">1m ago</span>
+            <div class="time">1m ago</div>
+          </div>
         </div>
-      </div>
-      <div class="notification">
-        <img src="" alt="" class="userImage">
-        <div >
-            <a href="#" class="userID">Mark Webber</a>
-            <span class="message">reacted to your recent post</span>
-            <a href="#" class="messagejoin">My first tournament today!</a>
+        <div class="notification active">
+          <img src="/assets/images/avatar-angela-gray.webp" alt="" class="userImage">
+          <div>
+            <a href="#" class="userID">Angela Gray</a>
+            <span class="message">followed you</span>
             <span class="status"></span>
-            <span class="time">1m ago</span>
+            <div class="time">5m ago</div>
+          </div>
+        </div>
+        <div class="notification active">
+          <img src="/assets/images/avatar-jacob-thompson.webp" alt="" class="userImage">
+          <div>
+            <a href="#" class="userID">Jacob Thompson</a>
+            <span class="message"> has joined your group </span>
+            <a href="#" class="messagejoin">Chess Club</a>
+            <span class="status"></span>
+            <div class="time">1 day ago</div>
+          </div>
+        </div>
+        <div class="notification">
+          <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="" class="userImage">
+          <div>
+            <a href="#" class="userID">Rizky Hasanuddin</a>
+            <span class="message">sent you a private message</span>
+            <span class="status"></span>
+            <div class="time">5 days ago</div>
+            <div class="messageBox">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+              I'm already having lots of fun and improving my game.
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
-  <!-- Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
+  <!--  
   Kimberly Smith commented on your picture
   1 week ago
 
@@ -76,10 +89,11 @@
 
   Anna Kim left the group Chess Club
   2 weeks ago -->
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Plus Jakarta Sans Semi Bold';
+    font-family: 'Plus Jakarta Sans';
     src: url('assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
 }
 *{
@@ -9,11 +9,109 @@
 }
 
 html{
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(210, 60%, 98%);
 }
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Plus Jakarta Sans';
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 3px 20px 0px #dfdbdb;
+    width: 700px;
+    border-radius: 10px;
+    padding: 25px 20px; 
+}
+#head{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    margin-bottom: 20px;
+}
+#head h2{
+    font-weight: 800;
+}
+#counter{
+    color: hsl(0, 0%, 100%);
+    padding: 1px 10px;
+    border-radius: 5px;
+    background-color:hsl(219, 85%, 26%);
+    margin-left: 10px;
+    font-weight: 500;
+}
+#markRead{
+    margin-left: auto;
+    color:hsl(219, 12%, 42%);
+}
+#markRead:hover{
+    color: hsl(219, 85%, 26%);
+    font-weight: 500;
+}
+
+.notification.active{
+    background-color:hsl(211, 68%, 94%);
+}
+.notification{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.userImage{
+    width: 50px;
+    margin: 5px;
+}
+.userID{
+    font-weight: 800;
+    color: hsl(0, 0%, 0%);
+    line-height: 1.7;
+}
+.userID:hover{
+    color: hsl(219, 85%, 40%);
+}
+.message{
+    color: hsl(219, 12%, 42%);
+}
+.time{
+    color: hsl(219, 12%, 42%);
+    
+}
+.messagejoin{
+    color: hsl(219, 12%, 42%);
+    font-weight: 800;
+}
+.messagejoin:hover{
+    color: hsl(219, 85%, 40%);
+}
+.status{    
+    display: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:hsl(1, 90%, 64%) ;
+}
+
+.notification.active .status{
+    display: inline-block;
+}
+.messageBox{
+    border: 1px solid hsl(219, 12%, 42%);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: hsl(219, 12%, 42%);
+    font-weight: 500;
+}
+
+.messageBox:hover{
+    border: none;
+    background-color:hsl(211, 68%, 94%);
 }
