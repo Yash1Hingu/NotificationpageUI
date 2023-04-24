@@ -59,6 +59,7 @@ a{
     background-color:hsl(211, 68%, 94%);
 }
 .notification{
+    position: relative;
     display: flex;
     align-items: flex-start;
     padding: 10px;
@@ -67,7 +68,11 @@ a{
 }
 .userImage{
     width: 50px;
-    margin: 5px;
+    margin-right: 10px;
+}
+.notification .box{
+    width: 100%;
+    position: relative;
 }
 .userID{
     font-weight: 800;
@@ -82,7 +87,7 @@ a{
 }
 .time{
     color: hsl(219, 12%, 42%);
-    
+    width: fit-content;
 }
 .messagejoin{
     color: hsl(219, 12%, 42%);
@@ -114,4 +119,10 @@ a{
 .messageBox:hover{
     border: none;
     background-color:hsl(211, 68%, 94%);
+}
+
+.messageImage{
+    height: 100%;
+    position: absolute;
+    right: 0;    
 }
